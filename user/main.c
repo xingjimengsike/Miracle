@@ -13,7 +13,7 @@ int main(void)
 			for(uint32_t i=0;i<6;i++){
 				GPIOA->BSRR = 0x000000FFu << 16;
 				GPIOA->BSRR = 1u << i;
-				delay(500000);
+				delay(500000); //上面的延迟函数吧
 			}
 			/* 反向：PA4 → PA1（两端不重复） */
 		for(uint32_t i =4;i>0;i--){
